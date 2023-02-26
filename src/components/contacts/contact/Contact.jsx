@@ -12,7 +12,12 @@ export const Contact = ({ name, number, id, createdAt }) => {
 
   return (
     <Li>
-      {name}: {number}{createdAt + ' '}
+
+
+      {name}: {number}
+      <br />
+      {' was created at: ' + createdAt}
+
       <button onClick={handleDelete} >Delete</button>
     </Li>
   );
